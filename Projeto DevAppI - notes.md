@@ -4,9 +4,9 @@
 
 ------------------------------------------------------------------------
 
-# Aluno: Adilson Monteiro / ASSIS BRASIL (noite)
+# \# Aluno: Adilson Monteiro / ASSIS BRASIL (noite)
 
-==== PROJETO - App Grupo do Bola <====
+====\> PROJETO - App Grupo do Bola \<====
 
 --- O QUE ---
 
@@ -18,7 +18,7 @@
 
 --- COMO ---
 
->> REGRAS DE NEGÓCIO <<
+> > REGRAS DE NEGÓCIO \<\<
 
 # Será utilizado a arquitetura MVC
 
