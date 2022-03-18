@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
 
   containerLogin: {
     flex: 1,
-    marginBottom: 50,
+    marginBottom: 40,
     alignItems: 'center',
     justifyContent: 'flex-end',
     width: '100%',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     elevation: 5,
     zIndex: 10,
   },
-  textLogin: {
+  textLogin: {    
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 50,

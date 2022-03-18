@@ -31,11 +31,11 @@ function LoginScreen({navigation}) {
 
   return (
     <KeyboardAvoidingView style={styles.login}>
-      <StatusBar style={{flex: 1}} backgroundColor="#FC009F" />
+      <StatusBar style={{flex: 1}} backgroundColor="#AC0970" />
       <Animated.View
         useNativeDriver="true"
         // eslint-disable-next-line no-sparse-arrays
-        style={[styles.containerLogin, {transform: [{translateY: offset.x}]}]}>
+        style={[styles.containerLogin, {transform: [{translateX: offset.x}]}]}>
         <ImageBackground
           resizeMode="cover"
           source={require('../../../assets/img/splashLogin.jpg')}
@@ -55,13 +55,12 @@ function LoginScreen({navigation}) {
                 onChangeText={() => {}}
                 underlayColor="#fff"
               />
-              <TouchableHighlight activeOpacity={0.7} style={styles.btnSubmit} underlayColor="#fff">
-                <Text
-                  
-                  onPress={() => navigation.navigate('Home')}
-                  style={styles.submitText}>
-                  Entrar
-                </Text>
+              <TouchableHighlight
+                activeOpacity={0.7}
+                style={styles.btnSubmit}
+                onPress={() => navigation.navigate('Home')}
+                underlayColor="#fff">
+                <Text style={styles.submitText}>Entrar</Text>
               </TouchableHighlight>
             </View>
           </Animated.View>
