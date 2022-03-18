@@ -1,28 +1,30 @@
 ############################################################################ 
+<hr>
+<h1>QI - DEV APP I</h1>
+<hr>
+<h3>Aluno: Adilson Monteiro / ASSIS BRASIL (noite)</h3>
+<hr>
+<h2>==== PROJETO - App Grupo do Bola ====</h2>
 
-# QI - DEV APP I
+<h3>--- O QUE ---</h3>
 
-------------------------------------------------------------------------
+<p>
 
-# \# Aluno: Adilson Monteiro / ASSIS BRASIL (noite)
+* App com informações de agenda, integrantes, contatos e material de trabalho do grupo.
 
-====\> PROJETO - App Grupo do Bola \<====
+* Informações de shows e compromissos do grupo, assim como novas músicas e vídeos, estarão disponíveis no App facilitando o acesso dos fãs ao conteúdo do grupo em tempo real.
 
---- O QUE ---
+* Para fins de divulgação o novo trabalho do grupo estará disponível off-line no app (novo disco).
 
-# App com informações de agenda, integrantes, contatos e material de trabalho do grupo.
+</p>
+<hr>
+<h2>--- COMO ---</h2>
 
-# Informações de shows e compromissos do grupo, assim como novas músicas e vídeos, estarão disponíveis no App facilitando o acesso dos fãs ao conteúdo do grupo em tempo real.
+<h3> REGRAS DE NEGÓCIO </h3>
 
-# Para fins de divulgação o novo trabalho do grupo estará disponível off-line no app (novo disco).
+* Será utilizado a arquitetura MVC
 
---- COMO ---
-
-> > REGRAS DE NEGÓCIO \<\<
-
-# Será utilizado a arquitetura MVC
-
-# App terá 7 telas:
+* App terá 7 telas:
 
     1. Splash Screen
     2. Login
@@ -32,14 +34,15 @@
     6. Player
     7. Bio
 
-# Login poderá ser realizado através de redes sociais
+* Login poderá ser realizado através de redes sociais
 
-# Não será permitido download de fotos ou áudio para fora do App
+* Não será permitido download de fotos ou áudio para fora do App
 
---- CORES ---
+<h3>--- CORES ---</h3>
+<p>preto \#000000 branco \#ffffff rosa \#f7f7f8
+</p>
 
-preto \#000000 branco \#ffffff rosa \#f7f7f8
+<h3>--- FONTE ---</h3>
+<p>fonte Google Roboto</p>
 
---- FONTE ---
-
-fonte Google Roboto
+<hr>
