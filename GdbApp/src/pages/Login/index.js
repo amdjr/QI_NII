@@ -3,19 +3,16 @@ import {useEffect, useState} from 'react';
 import {
   View,
   Text,
-  Button,
   TextInput,
   Animated,
   KeyboardAvoidingView,
   StatusBar,
   TouchableHighlight,
   ImageBackground,
+  SafeAreaView,
 } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import styles from './styleLoginCss';
-import imgBackground from '../../../assets/img/foto3.jpeg';
 
 function LoginScreen({navigation}) {
   const [offset] = useState(new Animated.ValueXY({x: -200, y: 0}));
@@ -30,43 +27,48 @@ function LoginScreen({navigation}) {
   }, [offset.x]);
 
   return (
-    <KeyboardAvoidingView style={styles.login}>
-      <StatusBar style={{flex: 1}} backgroundColor="#AC0970" />
-      <Animated.View
-        useNativeDriver="true"
-        // eslint-disable-next-line no-sparse-arrays
-        style={[styles.containerLogin, {transform: [{translateX: offset.x}]}]}>
-        <ImageBackground
-          resizeMode="cover"
-          source={require('../../../assets/img/splashLogin.jpg')}
-          style={styles.imgStyle}>
-          <Animated.View
-            useNativeDriver="true"
-            // eslint-disable-next-line no-sparse-arrays
-            style={[
-              styles.containerLogin,
-              {transform: [{translateX: offset.x}]},
-            ]}>
-            <View style={styles.containerLogin}>
-              <Text style={styles.textLogin}>Login</Text>
-              <TextInput
-                style={styles.input}
-                placeholder="email"
-                onChangeText={() => {}}
-                underlayColor="#fff"
-              />
-              <TouchableHighlight
-                activeOpacity={0.7}
-                style={styles.btnSubmit}
-                onPress={() => navigation.navigate('Home')}
-                underlayColor="#fff">
-                <Text style={styles.submitText}>Entrar</Text>
-              </TouchableHighlight>
-            </View>
-          </Animated.View>
-        </ImageBackground>
-      </Animated.View>
-    </KeyboardAvoidingView>
+    <SafeAreaView style={{flex: 1}}>
+      <KeyboardAvoidingView style={styles.login}>
+        <StatusBar style={{flex: 1}} backgroundColor="#AC0970" />
+        <Animated.View
+          useNativeDriver="true"
+          style={[
+            styles.containerLogin,
+            {transform: [{translateX: offset.x}]},
+          ]}>
+          <ImageBackground
+            resizeMode="cover"
+            source={require('../../../assets/img/splashLogin.jpg')}
+            style={styles.imgStyle}>
+            <Animated.View
+              useNativeDriver="true"
+              style={[
+                styles.containerLogin,
+                {transform: [{translateX: offset.x}]},
+              ]}>
+              <View style={styles.containerLogin}>
+                <Text style={styles.textLogin}>Login</Text>
+                <TextInput
+                  type="email"
+                  style={styles.input}
+                  placeholder="email"
+                  onChangeText={() => {}}
+                  underlayColor="#fff"
+                  /* icon="check" */
+                />
+                <TouchableHighlight
+                  activeOpacity={0.7}
+                  style={styles.btnSubmit}
+                  onPress={() => navigation.navigate('Home')}
+                  underlayColor="#fff">
+                  <Text style={styles.submitText}>Entrar</Text>
+                </TouchableHighlight>
+              </View>
+            </Animated.View>
+          </ImageBackground>
+        </Animated.View>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }
 

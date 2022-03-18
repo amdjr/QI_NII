@@ -1,26 +1,13 @@
 import * as React from 'react';
 import {useEffect, useState} from 'react';
-import {
-  View,
-  Text,
-  Button,
-  Animated,
-  Image,
-  StatusBar,
-  Dimensions,
-} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {View, Animated, Image, StatusBar} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {useNavigation, CommonActions} from '@react-navigation/core';
 
 import Logo from '../../../assets/img/logo2.png';
 import styles from './styleSplashCss';
 
 function SplashScreen({}) {
-  const edges = useSafeAreaInsets();
-
   const [offset] = useState(new Animated.ValueXY({x: 0, y: -400}));
 
   const navigation = useNavigation();
@@ -39,7 +26,7 @@ function SplashScreen({}) {
       navigation.dispatch(
         CommonActions.reset({
           index: 0,
-          routes: [{name: 'Login'}],         
+          routes: [{name: 'Login'}],
         }),
       );
     }, 5000),
@@ -53,15 +40,7 @@ function SplashScreen({}) {
           style={
             (styles.animationContainer, {transform: [{translateY: offset.y}]})
           }>
-          <Image
-            source={Logo}
-            style={{
-              width: 380,
-              height: 450,
-              paddingBottom: 10,
-              marginTop: 170,
-            }}
-          />
+          <Image source={Logo} style={styles.imgSplash} />
         </Animated.View>
       </View>
     </SafeAreaProvider>
