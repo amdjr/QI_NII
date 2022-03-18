@@ -39,7 +39,7 @@
 * Não será permitido download de fotos ou áudio para fora do App
 
 <h3>--- CORES ---</h3>
-<p>preto \#000000 branco \#ffffff rosa \#f7f7f8
+<p>preto \#000000 branco \#ffffff rosa \#9E0D69
 </p>
 
 <h3>--- FONTE ---</h3>
