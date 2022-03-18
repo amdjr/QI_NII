@@ -12,4 +12,4 @@ function BioScreen({navigation}) {
   );
 }
 
-export default ContactScreen;
+export default BioScreen;

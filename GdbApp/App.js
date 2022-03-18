@@ -20,24 +20,33 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Splash">
         <Stack.Screen
+          name="Splash"
+          component={SplashScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
           name="Home"
           component={HomeScreen}
           options={{title: 'Início'}}
+          options={{
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="Bio"
           component={BioScreen}
           options={{title: 'Bio do Grupo'}}
         />
-        <Stack.Screen
-          name="Splash"
-          component={SplashScreen}
-          options={{title: 'splash'}}
-        />
+
         <Stack.Screen
           name="Login"
           component={LoginScreen}
           options={{title: 'Login'}}
+          options={{
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="About"
