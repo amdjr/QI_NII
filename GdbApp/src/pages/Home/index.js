@@ -9,8 +9,8 @@ function HomeScreen({navigation}) {
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'space-around'}}>
         <Text>Home Screen</Text>
         <Button
-          title="ir para contatos"
-          onPress={() => navigation.navigate('Contact')}
+          title="ir para Bio"
+          onPress={() => navigation.navigate('Bio')}
         />
         <Button
           title="ir para sobre"

@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from './src/pages/Home';
-import ContactScreen from './src/pages/Contact';
+import BioScreen from './src/pages/Bio';
 import SplashScreen from './src/pages/Splash';
 import LoginScreen from './src/pages/Login';
 import GalleryScreen from './src/pages/Gallery';
@@ -19,10 +19,11 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
+    
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Splash">
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Início' }}  />
-        <Stack.Screen name="Contact" component={ContactScreen} options={{ title: 'Contatos do Grupo' }} />
+        <Stack.Screen name="Bio" component={BioScreen} options={{ title: 'Bio do Grupo' }} />
         <Stack.Screen name="Splash" component={SplashScreen} options={{ title: 'splash' }}  />
         <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }}  />
         <Stack.Screen name="About" component={AboutScreen} options={{ title: 'Sobre' }}  />
