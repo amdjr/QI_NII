@@ -1,12 +1,12 @@
 import * as React from 'react';
-import {View, Text, Button, SafeAreaView} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {Text, View, Button, SafeAreaView} from 'react-native';
+
+import styles from './styleHomeCss';
 
 function HomeScreen({navigation}) {
   return (
-    <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'space-around'}}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.containerButtons}>
         <Text>Home Screen</Text>
         <Button
           title="ir para Bio"

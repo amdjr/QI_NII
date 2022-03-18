@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     elevation: 5,
     zIndex: 10,
   },
-  textLogin: {    
+  textLogin: {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 50,
