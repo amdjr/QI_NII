@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
-    marginHorizontal: 16,
+    marginHorizontal: 10,
   },
   item: {
     backgroundColor: '#550539BB',
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 32,
-    backgroundColor: '#070122A6',
+    backgroundColor: '#210429A6',
     textAlign: 'center',
     fontWeight: 'bold',
     color: '#dddd',
@@ -30,12 +30,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     fontWeight: 'bold',
-    backgroundColor: '#940088',
-    width: '100%',
     height: 100,
     paddingTop: 20,
   },
   imgBkg: {flex: 1},
+  topContainer: {
+    flexDirection: 'row',
+    backgroundColor: 'black',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    borderColor: '#9E0D69',
+    borderWidth: 5,
+  },
 });
 
 export default styles;

@@ -11,8 +11,7 @@ import styles from './styleAgendaCss';
 
 import DATA from './DATA.js';
 
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-const myIcon = <Icon name="leak" size={30} color="#900" />;
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const Item = ({title}) => (
   <View style={styles.item}>
@@ -25,8 +24,22 @@ const AgendaScreen = () => (
     <ImageBackground
       source={{uri: 'https://i.ibb.co/YynxtD2/Grupo-do-Bola6.jpg'}}
       style={styles.imgBkg}>
-      <Icon name={myIcon} size={21} />
-      <Text style={styles.pageTitle}>Agenda Grupo do Bola</Text>
+      <View style={styles.topContainer}>
+        <Icon
+          name="md-star-half"
+          size={50}
+          color="white"
+          backgroundColor="black"
+        />
+        <Text style={styles.pageTitle}>Agenda</Text>
+        <Icon
+          name="md-star-half"
+          size={50}
+          color="white"
+          backgroundColor="black"
+        />
+      </View>
+
       <SectionList
         sections={DATA}
         keyExtractor={(item, index) => item + index}
