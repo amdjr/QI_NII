@@ -29,7 +29,7 @@ function SplashScreen({}) {
           routes: [{name: 'Login'}],
         }),
       );
-    }, 3500),
+    }, 4000),
   );
 
   return (

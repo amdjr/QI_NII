@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 10,
     backgroundColor: '#000000',
+    borderWidth: 1,
   },
 
   logoImg: {width: '100%', height: (578 / 900) * width, marginTop: 20},
@@ -44,7 +45,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#000000',
     elevation: 10,
     margin: 7,
   },
