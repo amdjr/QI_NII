@@ -1,7 +1,7 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import {View, Text, Button} from 'react-native';
+import 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -10,7 +10,7 @@ import BioScreen from './src/pages/Bio';
 import SplashScreen from './src/pages/Splash';
 import LoginScreen from './src/pages/Login';
 import GalleryScreen from './src/pages/Gallery';
-import AboutScreen from './src/pages/About';
+import AgendaScreen from './src/pages/Agenda';
 import PlayerScreen from './src/pages/Player';
 
 const Stack = createNativeStackNavigator();
@@ -29,10 +29,7 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{title: 'Início'}}
-          options={{
-            headerShown: false,
-          }}
+          options={({title: 'Início'}, {headerShown: false})}
         />
         <Stack.Screen
           name="Bio"
@@ -43,15 +40,17 @@ function App() {
         <Stack.Screen
           name="Login"
           component={LoginScreen}
-          options={{title: 'Login'}}
-          options={{
-            headerShown: false,
-          }}
+          options={
+            ({title: 'Login'},
+            {
+              headerShown: false,
+            })
+          }
         />
         <Stack.Screen
-          name="About"
-          component={AboutScreen}
-          options={{title: 'Sobre'}}
+          name="Agenda"
+          component={AgendaScreen}
+          options={{title: 'Agenda'}}
         />
         <Stack.Screen
           name="Gallery"
