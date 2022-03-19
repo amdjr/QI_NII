@@ -4,23 +4,21 @@ import {StyleSheet, StatusBar} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
-    marginHorizontal: 10,
   },
   item: {
-    backgroundColor: '#550539BB',
+    backgroundColor: '#9C0066C7',
     padding: 20,
     marginVertical: 8,
   },
   header: {
-    fontSize: 32,
-    backgroundColor: '#210429A6',
+    fontSize: 28,
+    backgroundColor: '#210429E3',
     textAlign: 'center',
     fontWeight: 'bold',
     color: '#dddd',
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     color: '#FFFFFF',
   },
   pageTitle: {

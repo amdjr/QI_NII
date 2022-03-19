@@ -29,33 +29,35 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={({title: 'Início'}, {headerShown: false})}
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="Bio"
           component={BioScreen}
-          options={{title: 'Bio do Grupo'}}
+          options={{
+            headerShown: false,
+          }}
         />
-
         <Stack.Screen
           name="Login"
           component={LoginScreen}
-          options={
-            ({title: 'Login'},
-            {
-              headerShown: false,
-            })
-          }
+          options={{
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="Agenda"
           component={AgendaScreen}
-          options={{title: 'Agenda'}}
+          options={{
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="Gallery"
           component={GalleryScreen}
-          options={{title: 'Galeria'}}
+          options={{
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="Player"

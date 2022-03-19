@@ -3,7 +3,6 @@ import {
   SafeAreaView,
   ScrollView,
   Text,
-  StyleSheet,
   View,
   ImageBackground,
   Animated,
@@ -37,10 +36,10 @@ const GalleryScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style={{flex: 1}} backgroundColor="#AC0970" />
+      <StatusBar style={{flex: 1}} backgroundColor="#000000" />
       <Image
         style={styles.logoImg}
-        source={require('../../../assets/img/logo1.png')}
+        source={require('../../../assets/img/logo2.png')}
       />
       <View style={styles.scrollContainer}>
         <ScrollView
@@ -55,7 +54,7 @@ const GalleryScreen = () => {
                 <ImageBackground source={{uri: image}} style={styles.card}>
                   <View style={styles.textContainer}>
                     <Text style={styles.infoText}>
-                      {'Image - ' + imageIndex}
+                      {'foto - ' + imageIndex}
                     </Text>
                   </View>
                 </ImageBackground>
