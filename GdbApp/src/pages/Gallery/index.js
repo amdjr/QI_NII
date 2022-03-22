@@ -47,7 +47,7 @@ const GalleryScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style={{flex: 1}} backgroundColor="#000000" />
+      <StatusBar style={{flex: 1}} backgroundColor="#9E0D69" />
       <Animated.View
         useNativeDriver="true"
         style={[styles.logoImg, {transform: [{translateX: offset.x}]}]}>

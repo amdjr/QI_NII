@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   normalDot: {
     height: 8,
     width: 8,
-    borderRadius: 4,
+    borderRadius: 5,
     backgroundColor: '#970A6D',
     marginHorizontal: 4,
   },
@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    width: 100,
+    height: 20,
   },
 });
 export default styles;

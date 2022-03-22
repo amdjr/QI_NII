@@ -13,6 +13,7 @@ import {TRACKS} from './components/tracks-data';
 import AlbumCover from './components/AlbumCover.js';
 import AlbumDetails from './components/AlbumDetails.js';
 import Controls from './components/Controls.js';
+import CompSlider from './components/CompSlider.js';
 
 function PlayerScreen({navigation}) {
   const [selectedTrack, setSelectedTrack] = useState(0);
@@ -88,6 +89,7 @@ function PlayerScreen({navigation}) {
               {...{playNextTrack}}
               {...{playPrevTrack}}
             />
+            <CompSlider />
           </View>
         </ImageBackground>
       </SafeAreaView>
