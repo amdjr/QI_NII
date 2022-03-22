@@ -9,9 +9,9 @@ import {
 
 import styles from './styleAgendaCss';
 
-import DATA from './DATA.js';
+import DATA from './components/DATA.js';
 
-import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Item = ({title}) => (
   <View style={styles.item}>
@@ -25,14 +25,14 @@ const AgendaScreen = () => (
       source={{uri: 'https://i.ibb.co/YynxtD2/Grupo-do-Bola6.jpg'}}
       style={styles.imgBkg}>
       <View style={styles.topContainer}>
-        <Icon
+        <Ionicons
           name="md-star-half"
           size={50}
           color="white"
           backgroundColor="black"
         />
         <Text style={styles.pageTitle}>Agenda</Text>
-        <Icon
+        <Ionicons
           name="md-star-half"
           size={50}
           color="white"

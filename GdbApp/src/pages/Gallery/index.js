@@ -11,7 +11,7 @@ import {
   Image,
 } from 'react-native';
 
-import images from './data';
+import images from './components/data';
 import styles from './styleGalleryCss';
 
 const GalleryScreen = () => {

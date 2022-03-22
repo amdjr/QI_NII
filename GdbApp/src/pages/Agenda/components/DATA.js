@@ -12,7 +12,12 @@ const DATA = [
   },
   {
     title: 'Março',
-    data: ['19.03 Guaíba/RS', '20.03 Gravataí/RS', '26.03 Florianópolis/SC'],
+    data: [
+      '19.03 Guaíba/RS',
+      '20.03 Gravataí/RS',
+      '26.03 Florianópolis/SC',
+      '27.03 São Paulo/SP',
+    ],
   },
   {
     title: 'Abril',

@@ -62,7 +62,9 @@ function App() {
         <Stack.Screen
           name="Player"
           component={PlayerScreen}
-          options={{title: 'Player'}}
+          options={{
+            headerShown: false,
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
