@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   Alert,
   Modal,
   ImageBackground,
   Text,
-  Pressable,
+  Animated,
   View,
   Image,
   SafeAreaView,
@@ -13,11 +13,20 @@ import {
 
 import styles from './styleBioCss';
 
-const fotoModal = import('../../../assets/img/iconGDB.png');
-
 function BioScreen({navigation}) {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalVisible1, setModalVisible1] = useState(false);
+
+  const [offset] = useState(new Animated.ValueXY({x: 0, y: -300}));
+
+  useEffect(() => {
+    Animated.spring(offset.y, {
+      toValue: 0,
+      speed: 0.5,
+      bounciness: 15,
+      useNativeDriver: true,
+    }).start();
+  }, [offset.y]);
 
   return (
     <SafeAreaView style={styles.centeredView}>
@@ -26,11 +35,18 @@ function BioScreen({navigation}) {
           resizeMode="contain"
           style={styles.centeredViewBio}
           source={require('../../../assets/img/logo2.png')}>
-          <Text style={styles.textTop}>Amizade duradoura</Text>
-          <Text style={styles.textBio}>
-            O grupo que conquistou o público no programa SuperStar da rede Globo
-            agora com um novo trabalho.
-          </Text>
+          <Animated.View
+            useNativeDriver="true"
+            style={[
+              styles.containerLogo,
+              {transform: [{translateY: offset.y}]},
+            ]}>
+            <Text style={styles.textTop}>Amizade duradoura</Text>
+            <Text style={styles.textBio}>
+              O grupo que conquistou o público no programa SuperStar da rede
+              Globo agora com um novo trabalho.
+            </Text>
+          </Animated.View>
         </ImageBackground>
       </View>
       <View style={styles.centeredView}>
@@ -63,6 +79,7 @@ function BioScreen({navigation}) {
                 </View>
               </View>
             </Modal>
+
             <TouchableHighlight
               activeOpacity={0.7}
               style={[styles.button, styles.buttonOpen]}

@@ -39,7 +39,7 @@
 * Não será permitido download de fotos ou áudio para fora do App
 
 <h3>--- CORES ---</h3>
-<p> \#000000  \#ffffff  \#9E0D69 \#AC0970 \#FFFFFFA4
+<p> \#000000  \#ffffff  \#9E0D69 \#AC0970 \\ #8A00578C \#FFFFFFA4 \#E90756BE \#AAA4A49A \
 </p>
 
 <h3>--- FONTE ---</h3>

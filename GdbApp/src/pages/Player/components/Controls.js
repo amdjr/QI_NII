@@ -17,11 +17,11 @@ export default function Controls({
       </TouchableOpacity>
 
       {pause ? (
-        <TouchableOpacity style={styles.playPauseBtn} onPress={btnPlayPause}>
+        <TouchableOpacity style={styles.pauseBtn} onPress={btnPlayPause}>
           <AntDesign name="pausecircleo" size={45} color="white" />
         </TouchableOpacity>
       ) : (
-        <TouchableOpacity style={styles.playPauseBtn} onPress={btnPlayPause}>
+        <TouchableOpacity style={styles.playBtn} onPress={btnPlayPause}>
           <AntDesign name="playcircleo" size={45} color="white" />
         </TouchableOpacity>
       )}

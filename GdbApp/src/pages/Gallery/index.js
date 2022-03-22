@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -15,6 +15,17 @@ import images from './components/data';
 import styles from './styleGalleryCss';
 
 const GalleryScreen = () => {
+  const [offset] = useState(new Animated.ValueXY({x: -200, y: 0}));
+
+  useEffect(() => {
+    Animated.spring(offset.x, {
+      toValue: 0,
+      speed: 0.5,
+      bounciness: 15,
+      useNativeDriver: true,
+    }).start();
+  }, [offset.x]);
+
   const scrollX = useRef(new Animated.Value(0)).current;
 
   const {width: windowWidth} = useWindowDimensions();
@@ -37,10 +48,14 @@ const GalleryScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style={{flex: 1}} backgroundColor="#000000" />
-      <Image
-        style={styles.logoImg}
-        source={require('../../../assets/img/logo2.png')}
-      />
+      <Animated.View
+        useNativeDriver="true"
+        style={[styles.logoImg, {transform: [{translateX: offset.x}]}]}>
+        <Image
+          style={styles.logoImg}
+          source={require('../../../assets/img/logo2.png')}
+        />
+      </Animated.View>
       <View style={styles.scrollContainer}>
         <ScrollView
           horizontal={true}

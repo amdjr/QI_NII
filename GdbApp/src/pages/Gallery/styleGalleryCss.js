@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   logoImg: {
     width: '100%',
     height: (578 / 900) * width,
-    marginTop: 50,
+    marginTop: 5,
   },
 
   scrollContainer: {

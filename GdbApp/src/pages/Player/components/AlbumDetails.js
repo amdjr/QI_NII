@@ -6,8 +6,8 @@ import styles from '../stylePlayerCss';
 export default function AlbumDetails({trackName, artistName}) {
   return (
     <View style={styles.containerDetails}>
-      <Text style={styles.name}>{artistName}</Text>
-      <Text style={styles.name}>{trackName}</Text>
+      <Text style={styles.nameArtist}>{artistName}</Text>
+      <Text style={styles.nameSong}>{trackName}</Text>
     </View>
   );
 }

@@ -19,8 +19,8 @@ function HomeScreen({navigation}) {
   useEffect(() => {
     Animated.spring(offset.x, {
       toValue: 0,
-      speed: 1,
-      /*  bounciness: 10, */
+      speed: 0.5,
+      bounciness: 15,
       useNativeDriver: true,
     }).start();
   }, [offset.x]);
@@ -34,12 +34,16 @@ function HomeScreen({navigation}) {
             source={require('../../../assets/img/logo2.png')}
           />
         </View>
-        <View style={styles.containerFoto}>
-          <Image
-            style={styles.logoImg}
-            source={{uri: 'https://i.ibb.co/92z2mZz/Grupo-do-Bola.png'}}
-          />
-        </View>
+        <Animated.View
+          useNativeDriver="true"
+          style={[styles.containerLogo, {transform: [{translateX: offset.x}]}]}>
+          <View style={styles.containerFoto}>
+            <Image
+              style={styles.logoImg}
+              source={{uri: 'https://i.ibb.co/92z2mZz/Grupo-do-Bola.png'}}
+            />
+          </View>
+        </Animated.View>
         <View style={styles.containerBtn}>
           <TouchableHighlight
             activeOpacity={0.7}
