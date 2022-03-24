@@ -46,3 +46,6 @@
 <p>fonte Google Roboto</p>
 
 <hr>
+<h3>--- Wireframe ---</h3>
+
+<img src="https://github.com/amdjr/QI_NII/blob/main/Winframe%20GdbApp.jpg"/>
