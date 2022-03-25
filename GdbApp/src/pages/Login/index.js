@@ -10,11 +10,26 @@ import {
   TouchableHighlight,
   ImageBackground,
   SafeAreaView,
+  Alert,
 } from 'react-native';
 
 import styles from './styleLoginCss';
 
 function LoginScreen({navigation}) {
+  const [email, setEmail] = useState(null);
+  const validation = () => {
+    if (email === null) {
+      console.log(email);
+      Alert.alert('É preciso um email para continuar');
+    } else if (email.search('@' && '.com') === -1) {
+      console.log(email);
+      Alert.alert('Verifique o email digitado');
+    } else {
+      console.log(email);
+      navigation.navigate('Home');
+    }
+  };
+
   const [offset] = useState(new Animated.ValueXY({x: -200, y: 0}));
 
   useEffect(() => {
@@ -49,17 +64,17 @@ function LoginScreen({navigation}) {
               <View style={styles.containerLogin}>
                 <Text style={styles.textLogin}>Login</Text>
                 <TextInput
+                  value={email}
                   type="email"
                   style={styles.input}
-                  placeholder="email"
-                  onChangeText={() => {}}
+                  placeholder="digite seu email"
+                  onChangeText={value => setEmail(value)}
                   underlayColor="#fff"
-                  /* icon="check" */
                 />
                 <TouchableHighlight
                   activeOpacity={0.7}
                   style={styles.btnSubmit}
-                  onPress={() => navigation.navigate('Home')}
+                  onPress={validation}
                   underlayColor="#fff">
                   <Text style={styles.submitText}>Entrar</Text>
                 </TouchableHighlight>

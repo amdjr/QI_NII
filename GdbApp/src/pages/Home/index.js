@@ -3,11 +3,9 @@ import {useState, useEffect} from 'react';
 import {
   Text,
   Image,
-  StatusBar,
   View,
   Animated,
   SafeAreaView,
-  Button,
   TouchableHighlight,
 } from 'react-native';
 

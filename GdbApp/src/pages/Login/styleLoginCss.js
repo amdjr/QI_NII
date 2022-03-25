@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: '#FFFFFFA4',
     width: '90%',
-    fontSize: 20,
+    fontSize: 18,
+    fontStyle: 'italic',
     marginTop: 30,
     marginBottom: 5,
     marginLeft: 10,
