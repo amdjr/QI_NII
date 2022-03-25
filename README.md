@@ -47,3 +47,15 @@
 <h3>--- Wireframe ---</h3>
 
 <img src="https://github.com/amdjr/QI_NII/blob/main/Winframe%20GdbApp.jpg"/>
+
+<hr>
+<h3>--- ScreenShots ---</h3>
+
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/splashScreen.png"/>
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/lognScreen.png"/>
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/HomeScreen.png"/>
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/BioScreen.png"/>
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/GalleryScreen.png"/>
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/AgendaScreen.png"/>
+<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/PlayerScreen.png"/>
+
