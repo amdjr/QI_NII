@@ -51,7 +51,7 @@
 <hr>
 <h3>--- ScreenShots ---</h3>
 
-<img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/splashScreen.png"/>
+<img width=400px height=400px src="https://github.com/amdjr/QI_NII/blob/main/screenshots/splashScreen.png"/>
 <img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/lognScreen.png"/>
 <img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/HomeScreen.png"/>
 <img src="https://github.com/amdjr/QI_NII/blob/main/screenshots/BioScreen.png"/>
