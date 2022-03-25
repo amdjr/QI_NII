@@ -21,7 +21,7 @@ function LoginScreen({navigation}) {
     if (email === null) {
       console.log(email);
       Alert.alert('É preciso um email para continuar');
-    } else if (email.search('@' && '.com') === -1) {
+    } else if (email.search('@' && '.com') === -1 || email.length < 6) {
       console.log(email);
       Alert.alert('Verifique o email digitado');
     } else {
