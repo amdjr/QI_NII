@@ -14,8 +14,6 @@
 
 * Informações de shows e compromissos do grupo, assim como novas músicas e vídeos, estarão disponíveis no App facilitando o acesso dos fãs ao conteúdo do grupo em tempo real.
 
-* Para fins de divulgação o novo trabalho do grupo estará disponível off-line no app (novo disco).
-
 </p>
 <hr>
 <h2>--- COMO ---</h2>
@@ -34,7 +32,7 @@
     6. Player
     7. Bio
 
-* Login poderá ser realizado através de redes sociais
+* Login necessita de um email e também poderá ser realizado através de redes sociais
 
 * Não será permitido download de fotos ou áudio para fora do App
 
@@ -46,3 +44,6 @@
 <p>fonte Google Roboto</p>
 
 <hr>
+<h3>--- Wireframe ---</h3>
+
+<img src="https://github.com/amdjr/QI_NII/blob/main/Winframe%20GdbApp.jpg"/>
