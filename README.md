@@ -50,12 +50,12 @@
 
 <hr>
 <h3>--- ScreenShots ---</h3>
-
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/splashScreen.png"/>
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/lognScreen.png"/>
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/HomeScreen.png"/>
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/BioScreen.png"/>
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/GalleryScreen.png"/>
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/AgendaScreen.png"/>
-<img width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/PlayerScreen.png"/>
-
+<div display=flex justify-content=center align-itens=center >
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/splashScreen.png"/>
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/lognScreen.png"/>
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/HomeScreen.png"/>
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/BioScreen.png"/>
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/GalleryScreen.png"/>
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/AgendaScreen.png"/>
+<img alt="ss-gdb" width=330 height=620 src="https://github.com/amdjr/QI_NII/blob/main/screenshots/PlayerScreen.png"/>
+</div>
