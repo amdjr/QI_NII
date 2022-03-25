@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
 
   sliderText: {color: 'white'},
 
-  /* estilos controles */
+  /* estilos controles  e Slider Volume */
 
   controlsContainer: {
     flexDirection: 'row',

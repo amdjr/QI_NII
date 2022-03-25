@@ -49,6 +49,9 @@ function BioScreen({navigation}) {
           </Animated.View>
         </ImageBackground>
       </View>
+
+      {/* Container Modal */}
+
       <View style={styles.centeredView}>
         <ImageBackground
           style={styles.centeredViewModal}

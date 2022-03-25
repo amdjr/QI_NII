@@ -60,6 +60,8 @@ export default function AgendaScreen() {
           </View>
         </Animated.View>
 
+        {/* Section Agenda */}
+
         <SectionList
           sections={DATA}
           keyExtractor={(item, index) => item + index}

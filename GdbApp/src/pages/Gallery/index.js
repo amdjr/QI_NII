@@ -56,6 +56,9 @@ const GalleryScreen = () => {
           source={require('../../../assets/img/logo2.png')}
         />
       </Animated.View>
+
+      {/* Container carousel galeria */}
+
       <View style={styles.scrollContainer}>
         <ScrollView
           horizontal={true}

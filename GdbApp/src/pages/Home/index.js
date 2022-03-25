@@ -42,6 +42,9 @@ function HomeScreen({navigation}) {
             />
           </View>
         </Animated.View>
+
+        {/* botões links */}
+
         <View style={styles.containerBtn}>
           <TouchableHighlight
             activeOpacity={0.7}

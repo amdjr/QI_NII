@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   imgStyle: {
     width: '100%',
     height: '100%',
+    marginTop: 50,
   },
   login: {
     flex: 1,
@@ -51,6 +52,14 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
   textLogin: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 50,
+    textShadowColor: 'rgba(208, 32, 144, 8.5)',
+    textShadowOffset: {width: 1, height: 1},
+    textShadowRadius: 15,
+  },
+  textLogin2: {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 50,

@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
 
+  /* Container carousel galeria */
+
   scrollContainer: {
     height: 450,
     alignItems: 'center',
@@ -22,6 +24,9 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 20,
   },
+
+  /* Container fotos */
+
   card: {
     flex: 1,
     marginVertical: 4,

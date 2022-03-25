@@ -16,6 +16,8 @@ import Controls from './components/Controls.js';
 import CompSlider from './components/CompSlider.js';
 
 function PlayerScreen({navigation}) {
+  /* criando botões e dados de tracks */
+
   const [selectedTrack, setSelectedTrack] = useState(0);
   const currentTrack = TRACKS[selectedTrack];
 
@@ -42,6 +44,8 @@ function PlayerScreen({navigation}) {
       setSelectedTrack(selectedTrack - 1);
     }
   }
+
+  /* animação */
 
   const [offset] = useState(new Animated.ValueXY({x: 0, y: -200}));
 
@@ -89,6 +93,7 @@ function PlayerScreen({navigation}) {
               {...{playNextTrack}}
               {...{playPrevTrack}}
             />
+            {/* Barra de volume Slider */}
             <CompSlider />
           </View>
         </ImageBackground>

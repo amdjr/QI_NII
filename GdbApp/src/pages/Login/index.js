@@ -16,12 +16,14 @@ import {
 import styles from './styleLoginCss';
 
 function LoginScreen({navigation}) {
+  /* validando o email */
+
   const [email, setEmail] = useState(null);
   const validation = () => {
     if (email === null) {
       console.log(email);
       Alert.alert('É preciso um email para continuar');
-    } else if (email.search('@' && '.com') === -1 || email.length < 6) {
+    } else if (email.search('@' && '.com') === -1) {
       console.log(email);
       Alert.alert('Verifique o email digitado');
     } else {
@@ -30,13 +32,18 @@ function LoginScreen({navigation}) {
     }
   };
 
+  /* função esconder titulo ao clicar no textInput */
+
+  const [titleOnOff, setTitleOnOff] = useState(true);
+
+  /* animação */
+
   const [offset] = useState(new Animated.ValueXY({x: -200, y: 0}));
 
   useEffect(() => {
     Animated.spring(offset.x, {
       toValue: 0,
       speed: 1,
-      /*  bounciness: 10, */
       useNativeDriver: true,
     }).start();
   }, [offset.x]);
@@ -62,14 +69,19 @@ function LoginScreen({navigation}) {
                 {transform: [{translateX: offset.x}]},
               ]}>
               <View style={styles.containerLogin}>
-                <Text style={styles.textLogin}>Login</Text>
+                {titleOnOff ? (
+                  <Text style={styles.textLogin}>Login</Text>
+                ) : (
+                  <Text style={styles.textLogin2} />
+                )}
                 <TextInput
                   value={email}
-                  type="email"
+                  type={email}
                   style={styles.input}
                   placeholder="digite seu email"
                   onChangeText={value => setEmail(value)}
                   underlayColor="#fff"
+                  onFocus={() => setTitleOnOff(!setTitleOnOff)}
                 />
                 <TouchableHighlight
                   activeOpacity={0.7}

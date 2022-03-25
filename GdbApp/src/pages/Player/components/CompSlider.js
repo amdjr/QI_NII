@@ -11,10 +11,10 @@ export default function CompSlider() {
   return (
     <SafeAreaView style={{flex: 1}}>
       <View style={styles.containerSlider}>
-        {/*Text to show slider value*/}
+        {/*Texto do slider*/}
         <Text style={styles.sliderText}>Volume : {sliderValue}</Text>
 
-        {/*Slider with max, min, step and initial value*/}
+        {/*Valores do Slider : max, min e initial value*/}
         <Slider
           style={{width: '100%'}}
           maximumValue={100}
