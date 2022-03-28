@@ -13,14 +13,12 @@
 * App com informações de agenda, integrantes, contatos e material de trabalho do grupo.
 
 * Informações de shows e compromissos do grupo, assim como novas músicas e vídeos, estarão disponíveis no App facilitando o acesso dos fãs ao conteúdo do grupo em tempo real.
+    
+    <h3> REGRAS DE NEGÓCIO </h3>  
+    
+* Projeto tem a arquitetura MVC / CLI
 
-</p>
-<hr>
-<h2>--- COMO ---</h2>
-
-<h3> REGRAS DE NEGÓCIO </h3>
-
-* Será utilizado a arquitetura MVC
+* Login necessita somente de um email para ser realizado
 
 * App terá 7 telas:
 
@@ -31,19 +29,53 @@
     5. Galeria
     6. Player
     7. Bio
-
+    
 * Login necessita somente de um email para ser realizado
 
-* Não será permitido download de fotos ou áudio para fora do App
+    <h3> TECNOLOGIAS UTILIZADAS </h3>  
+    
+* Node JS
+* React-native
 
 <h3>--- CORES ---</h3>
-<p> \#000000  \#ffffff  \#9E0D69 \#AC0970 \#8A00578C \#FFFFFFA4 \#E90756BE \#AAA4A49A \
+
+<p> Códigos de cores utilizadas:
+    \#000000  
+    \#ffffff  
+    \#9E0D69 
+    \#AC0970 
+    \#8A00578C 
+    \#FFFFFFA4 
+    \#E90756BE 
+    \#AAA4A49A
 </p>
 
 <h3>--- FONTE ---</h3>
 <p>fonte Google Roboto</p>
 
 <hr>
+  
+</p>
+<hr>
+<h2>--- COMO ---</h2>
+<h3>Para iniciar o projeto:</h3>
+
+ <p>É necessário ter uma IDE e um Emulador ou dispositivo Android para rodar o App. Também é necessário conexão com a internet para visualização de todas as imagens do App</p>
+  
+ <p>
+    
+    1. Faça um clone do repositório clicando no botão a direita do repositório e copie o link.
+    
+    2. Abra uma nova pasta utilizando sua IDE e abra um terminal (também pode ser utilizado o CMD ou PowerShell).
+    
+    3. Digite o comando 'git clone (cole o link do repositório aqui)' e pressione ENTER.
+    
+    4. Após o do download do projeto, execute no terminal o comando 'npm install' para adicionar o node_modules ao projeto.
+    
+    5. Inicie o projeto utilizando o comando 'npx react-native run-android' e aguarde o App ser instalado.
+
+ </p>
+
 <h3>--- Wireframe ---</h3>
 
 <img src="https://github.com/amdjr/QI_NII/blob/main/Winframe%20GdbApp.jpg"/>
