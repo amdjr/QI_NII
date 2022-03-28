@@ -27,17 +27,17 @@
     1. Splash Screen
     2. Login
     3. Home
-    4. Agenda/Contato
+    4. Agenda
     5. Galeria
     6. Player
     7. Bio
 
-* Login necessita de um email e também poderá ser realizado através de redes sociais
+* Login necessita somente de um email para ser realizado
 
 * Não será permitido download de fotos ou áudio para fora do App
 
 <h3>--- CORES ---</h3>
-<p> \#000000  \#ffffff  \#9E0D69 \#AC0970 \\ #8A00578C \#FFFFFFA4 \#E90756BE \#AAA4A49A \
+<p> \#000000  \#ffffff  \#9E0D69 \#AC0970 \#8A00578C \#FFFFFFA4 \#E90756BE \#AAA4A49A \
 </p>
 
 <h3>--- FONTE ---</h3>
