@@ -68,7 +68,7 @@
     
     2. Abra uma nova pasta utilizando sua IDE e abra um terminal (também pode ser utilizado o CMD ou PowerShell).
     
-    3. Digite o comando 'git clone (cole o link do repositório aqui)' e pressione ENTER.
+    3. Digite o comando 'gh repo clone amdjr/QI_NII' e pressione ENTER.
     
     4. Após o do download do projeto, execute no terminal o comando 'npm install' para adicionar o node_modules ao projeto.
     
